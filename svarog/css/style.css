@@ -20,11 +20,27 @@ html,
 body {
   height: 100%;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
-  color: rgb(15, 15, 15);
+  color:#333333;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+  }
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-ExtraBold.ttf);
+  font-weight: 800;
+  }
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
 }
 /*--------------------*/
 .wrapper {
@@ -39,6 +55,21 @@ body {
   margin: 0px auto;
   padding: 0px 15px 0px 15px;
   box-sizing: content-box;
+}
+._title {
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+}
+._text {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: Open Sans;
 }
 .block1 {
     position: relative;
@@ -72,15 +103,15 @@ left:0px;
 width: 64%;
 display: flex;
 justify-content: flex-end;
-
-}
-.header-right__menu {
-    
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px;
 }
 .header-right__menu ul{
     display: flex;
     margin-top: 50px;
-   
 }
 .header-right__menu ul li{
    margin-left: 30px;
@@ -119,9 +150,9 @@ font-weight: 800;
 font-size: 60px;
 line-height:70px;
 color:#16A1E7;
+font-family: Poppins;
 }
 .main-block__text {
-
  font-size: 16px;
  font-style: normal;
  font-weight: 400;
@@ -129,7 +160,7 @@ color:#16A1E7;
  color: #333;
  margin-top: 30px;
  margin-bottom: 40px;
- 
+ font-family: Open Sans;
 }
 .main-block__left-column input{
 border: 2px solid #16A1E7;
@@ -141,6 +172,7 @@ font-style: normal;
 font-weight: 600;
 color: #333;
 text-transform: uppercase;
+font-family: Poppins;
 }
 
 
@@ -159,20 +191,225 @@ text-transform: uppercase;
     z-index: 5;
     margin-top: 370px;
 }
-.about__title {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 800;
-    color:#333
-    
-}
+
 .about__text {
-     color: #333;
-     font-size: 16px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 22px;
-     padding-top: 10px;
+    padding-top: 10px;
+}
+
+/*-------mission-block-------*/
+.mission__container {
+margin-top: 149px;
+margin-bottom: 156px;
+
+}
+.mission__title {
+  text-align: center;
+  
+}
+.mission__subtitle {
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+text-align: center;
+  margin-top: 10px;
+}
+.mission__blocks {
+  display: flex;
+  text-align: center;
+  margin-top: 66px;
+  
+}
+.block__mission {
+margin-left: 30px;
+width: 25%;
+}
+.block__mission1 {
+width: 25%;
+}
+.block-mision__title {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 25px;
+}
+.block__mission h3 {
+margin-top: 30px;
+margin-bottom: 20px;
+}
+.block__mission1 h3 {
+  margin-top: 30px;
+margin-bottom: 20 px;
+}
+.mission__list {
+  text-align: justify;  
+  font-family: Open Sans;
+  font-size: 16 px;
+  font-style: normal;
+  font-weight: 400;
+}
+.mission__list li{
+background: url(../img/blue\ dot.svg) no-repeat;
+padding-left: 20px;
+padding-bottom: 5px;
+}
+
+/*----------SECTORS-----------*/
+.sectors__title {
+  text-align: center;
+  
+}
+.sectors__subtitle {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 56px;
+}
+.sectors__blocks {
+display: flex;
+}
+.block__sector {
+display: flex;
+padding-bottom: 34px;
+padding-top: 34px;
+background: url(../img/hexagon\ sectors.svg) no-repeat;
+margin-top: 40px;
+margin-bottom: 56px;
+width: 33.333%;
+}
+.sector__image img{
+margin-right: 30px;
+}
+.sector__text {
+  position: relative;
+}
+.sector__text h3 {
+  margin-bottom: 5px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
+  
+}
+.sector__text a {
+  color:#16A1E7;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.sector__text a::after {
+  content:url(../img/icons8-длинная-стрелка-вправо-20.png);
+  margin-left: 5px;
+  position: absolute;
+}
+/*-----------VALUES----------*/
+.values__container {
+  display: flex;
+  margin-top: 170px;
+}
+.values__left-column {
+width: 45%;
+}
+.values__right-column {
+width: 55%;
+margin-left:150px;
+}
+.values__left-column h3 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 
 
+/*-----------SLIDER----------*/
+.slider {
+  margin-top: 170px;
+  background: #FBFCFD;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.slider__title {
+text-align: center;
+}
+
+ /*--------FOOTER-----------*/
+.footer__body {
+  background: #2F3542;
+}
+.footer__container {
+  padding-top: 62px;
+}
+
+ .footer__content {
+  display: flex;
+  color:#FFFFFF;
+  padding-bottom: 65px;
+}
+.footer__column {
+  width: 25%;
+ 
+
+}
+.footer__link li a{
+color: #FFFFFF;
+}
+.social__networks {
+padding-top: 53px;
+}
+.social__networks img {
+  margin-right: 10px;
+}
+.footer__title {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+ 
+}
+.footer__link {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.footer__terms {
+  color: #CCCCCC;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer__terms a {
+  color: #FFFFFF;
+}
+.terms__left-column {
+width: 50%;
+text-align: left;
+}
+.terms__right-column {
+  width: 50%;
+  text-align: right;
 }
